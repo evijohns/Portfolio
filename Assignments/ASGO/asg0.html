@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8" />
+  <title>Draw a blue rectangle (canvas version)</title>
+  <script src="asg0.js"></script>
+  <script src="lib/cuon-matrix-cse160.js"></script>
+ </head>
+
+ <body onload="main()">
+  <canvas id="cnv1" width="400" height="400">
+  Please use a browser that supports "canvas"
+  </canvas>
+  <br> <!-- <br> creates a new line -->
+   <label for="v1xCoord">v1: x</label>
+   <input type="number" id="v1xCoord" min="-200" max="200" step="1" value="0"/>
+   <label for="v1yCoord">y</label>
+   <input type="number" id="v1yCoord" min="-200" max="200" step="1" value="0"/>
+   <br> <!-- <br> creates a new line -->
+   <label for="v2xCoord">v2: x</label>
+   <input type="number" id="v2xCoord" min="-200" max="200" step="1" value="0"/>
+   <label for="v2yCoord">y</label>
+   <input type="number" id="v2yCoord" min="-200" max="200" step="1" value="0"/>
+   <br> <!-- <br> creates a new line -->
+   <input type="button" value="Draw" onclick="handleDrawEvent()"></input>
+   <br><br>
+   <!-- Selection label below for: Add, Subtract, Multiply, Divide, Magnitude, and normalize -->
+   <label for="opSelect">Operation:</label>
+   <select id="opSelect">
+    <option value="Add">Add</option>
+    <option value="Subtract">Subtract</option>
+    <option value="Multiply">Multiply</option>
+    <option value="Divide">Divide</option>
+    <option value="Magnitude">Magnitude</option>
+    <option value="Normalize">Normalize</option>
+    <option value="Angle Between">Angle Between</option>
+    <option value="Area">Area</option>
+   </select>
+
+   <!-- Scalar Label, input functionality, and new button Draw for operation-->
+   <label for="scalar">Scalar:</label>
+   <input type="number" id="scalar" min="-10" max="10" step="0.1">
+   <br>
+   <input type="button" value="Draw" onclick="handleDrawOperationEvent()">
+
+   <label for="opSelect">Operation:</label>
+
+
+ </body>
+</html>

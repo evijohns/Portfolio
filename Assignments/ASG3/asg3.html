@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+  <head>
+    <!-- Head section with meta info and page title -->
+    <meta charset = "utf-8" />
+    <title>Asg 3: World - Evelyn Johnson</title>
+  </head>
+
+  <body onload="main()">
+
+    <!-- Canvas element for WebGL rendering -->
+    <p>
+      <canvas id = "webgl" width = "400" height = "400">
+        Please use a browser that supports "canvas"
+      </canvas>
+      <br>
+    </p>
+
+    <!-- Game controls description -->
+    <p>
+      <span style="font-size: 20px;"><b>Welcome to Sanrio World!! :)</b></span><br>
+      <br>
+      <b>Feautures:</b><br>
+      Camera can be moved using the keyboard.<br>
+      W - moves camera forward.<br>
+      A - moves camera to the left.<br>
+      S - moves camera backwards<br>
+      D - moves camera to the right.<br>
+      Q - turn camera left<br>
+      E - turn camera right<br>
+      Space - Jumps up<br>
+      Cntrl - Jumps down<br>
+      Click left - add a block  <br>
+      Click right- delete a block 
+    </p>
+
+    <!-- Block selection section -->
+    <p>
+      <b>Choose your Sanrio Character Block </b><br>
+      Switch to Hello Kitty block (Default): <button id = "bt0" >Choose</button><br>
+      Switch to Kuromi block: <button id = "bt1">Choose</button><br>
+      Switch to Chococat block: <button id = "bt2">Choose</button><br>
+      Switch to Cinnamoroll block: <button id = "bt3">Choose</button><br>
+    </p>
+
+    <!-- Script includes -->
+    <!-- External library scripts -->
+    <script src = "lib/webgl-utils.js"></script>
+    <script src = "lib/webgl-debug.js"></script>
+    <script src = "lib/cuon-utils.js"></script>
+    <script src = "lib/cuon-matrix-cse160.js"></script>
+    
+    <!-- Custom game scripts -->
+    <script src = "asg3.js"></script>
+    <script src = "Cube.js"></script>
+  </body>
+</html>
